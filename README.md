@@ -14,13 +14,14 @@ nacos提供可视化的界面去管理当前的配置与注册在这里的服务
 2、 网关
 gateway作为cloud的官推网关组件，提供了强大的功能，目前该项目实现了路由转发与token验证的样例，其他功能视需求有待补充
 3、服务注册
-在提供服务的项目上引入pom.xml中的如下内容
+在提供服务的项目上引入pom.xml中的如下内容   后面的内容请直接查看文字版
         <!-- nacos 服务发现 -->
         <dependency>
             <groupId>org.springframework.cloud</groupId>
             <artifactId>spring-cloud-starter-alibaba-nacos-discovery</artifactId>
             <version>0.2.2.RELEASE</version>
         </dependency>
+        
 （
 
 如果要使用配置中心的功能还需要额外引入
