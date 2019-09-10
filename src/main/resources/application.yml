@@ -1,0 +1,27 @@
+spring:
+  application:
+    name: nacos-gateway
+  cloud:
+    # 网关配置 下面这个配置代表着可以从注册中心去读取网关路由配置
+    gateway:
+      discovery:
+        locator:
+          enabled: true
+#    routes:
+#      - id: account-router5  # 自定义的路由id，需要保持一致
+#        uri: lb://producer  # 整合nacos的时候，使用这个方式指定调用的服务
+#        predicates:
+#        - Path=/echo/**
+#        filters:
+#        - StripPrefix=1
+    nacos:
+      discovery:
+        server-addr: 127.0.0.1:8848
+server:
+  port: 8032
+# 开启actuator管理api
+#management:
+#  endpoints:
+#    web:
+#      exposure:
+#        include: "*"

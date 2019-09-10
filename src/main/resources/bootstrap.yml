@@ -1,0 +1,10 @@
+spring:
+#  application:
+#    name: nacos-gateway
+  cloud:
+    nacos:
+      config:
+        server-addr: 127.0.0.1:8848
+        file-extension: yaml
+#  profiles:
+#    active: dev    #  这是命名空间，不指定的话是默认的public
